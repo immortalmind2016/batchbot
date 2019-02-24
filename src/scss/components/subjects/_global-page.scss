@@ -1,0 +1,325 @@
+.sub {
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 11px;
+
+
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+        padding: 2px;
+        background-color: #f8f8f8;
+
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #08528f;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: $gray-color;
+    }
+
+    .matarial {
+        background-color: $element-background;
+
+        .options {
+            color: #838383;
+            box-shadow: 0px 5px 8px 0px #DDD;
+
+            .show {
+
+                border-right: 2px solid $gray-color;
+                padding-bottom: 10px;
+
+                .show-button {
+                    background-color: $blue-color;
+                    width: 50px;
+                    height: 43px;
+                    margin-top: 10px;
+                    margin-left: 15px auto;
+                    border-radius: 5px;
+                    padding: 12px;
+                    cursor: pointer;
+
+                    span {
+                        display: block;
+                        width: 30px;
+                        height: 3px;
+                        background-color: #FFF;
+                        margin-bottom: 5px;
+
+                    }
+                }
+
+                @media #{$minLarge} {
+                    display: none;
+                }
+            }
+
+            .choose-term {
+                width: 21.621%;
+                border-right: 2px solid $gray-color;
+                padding: 10px 20px;
+                padding-right: 20px;
+                font-weight: bold;
+                color: #0A65AF;
+                display: none;
+
+                span {
+                    cursor: pointer;
+                }
+
+                @media #{$minLarge} {
+                    display: block;
+                }
+
+            }
+
+            .term-type {
+
+                //padding:8px;
+                padding-bottom: 10px;
+
+            }
+
+            .active {
+                background-color: $active-color;
+                color: #FFF;
+                border-radius: 5px;
+                text-align: center;
+
+            }
+
+            span {
+                padding-top: 10px;
+
+            }
+
+            .matarial-type {
+                width: 78.37%;
+                padding-top: 7px;
+                cursor: pointer;
+
+                .a {
+                    span {
+                        padding-top: 10px;
+                        font-weight: bold;
+                    }
+
+                    padding: 10px 0;
+                    margin-top:5px;
+                    margin-bottom:10px;
+
+                    &:not(:last-of-type) {
+                        border-right: 1px solid $gray-color;
+                    }
+
+                }
+
+                .active {
+                    background-color: $active-color;
+                    color: #FFF;
+                    width: 70%;
+                    border-radius: 5px;
+
+                    margin-bottom: 20px;
+                    padding-bottom: 10px;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    text-align: center;
+
+                    @media #{$minLarge} {
+                        padding-right: 20px;
+                        padding-left: 20px;
+                    }
+                }
+
+            }
+
+        }
+
+        .thin {
+            width: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            border-right: 1px solid $gray-color;
+            border-bottom: 1px solid $gray-color;
+            display: none;
+            height: 820px;
+
+            .choose-terms {
+                padding: 10px;
+                //padding-bottom:20px;
+                // padding-left:20px;
+
+                padding-top: 30px;
+                font-weight: bold;
+                color: #0A65AF;
+                display: none;
+
+                span {
+                    cursor: pointer;
+                }
+
+                @media #{$max-mobile} {
+                    display: block;
+                    box-shadow: 1px 1px 2px 0px #DDD;
+
+                }
+            }
+
+            .active {
+                background-color: $active-color;
+                color: #FFF;
+                padding: 8px;
+                border-radius: 5px;
+            }
+
+            .math {
+                margin-left: -7px;
+                margin-right: -7px;
+                margin-bottom: -10px;
+                margin-top: 20px;
+                border: 1px solid $gray-color;
+                border-radius: 10px;
+                color: #8C8A8A;
+
+                .first-letter {
+                    padding: 5px;
+                    border-radius: 14px 0px 0px 0px;
+                    background-color: #A0A0D3;
+                    margin-left: 20px;
+                    margin-top: 5px;
+                    font-size: 26px;
+                    color: #FFF;
+                    font-weight: bold;
+                }
+
+                .first-letter.green {
+                    background-color: #006b72;
+                }
+
+                .first-letter.red {
+                    background-color: #470000;
+                }
+
+                .first-letter.blue {
+                    background-color: #81D9F4;
+                }
+
+                .first-letter.yellow {
+                    background-color: #c9bc00;
+                }
+
+                span {
+                    margin-top: 20px;
+                    margin-left: 10px;
+                    font-weight: bold;
+                    font-size: 14px;
+                    color: $gray-color;
+
+
+
+                }
+
+                .subject-information {
+                    margin-top: 10px;
+                    border-top: 1px solid $gray-color;
+                    font-size: 12px;
+                    padding-bottom: 7px;
+
+                    .space {
+                        margin-top: 5px;
+                    }
+
+                    img {
+                        width: 10px;
+                        height: 15px;
+                        margin-right: 2px;
+                    }
+                }
+            }
+
+            @media #{$minLarge} {
+                display: block;
+                max-width: 21.621%;
+
+            }
+        }
+
+        .fat {
+            width: 100%;
+
+            a {
+
+                &:not(:last-of-type) {
+                    border-right: 2px solid #000;
+                }
+            }
+
+            .lesson {
+                padding: 0 10px;
+                margin: 20px 8px 8px 8px;
+                box-shadow: 1px 1px 1px 0px #DDD;
+
+                .lec {
+                    background-color: #f8f8f8;
+                    padding-top: 10px;
+                    padding-right: 60px;
+                    text-transform: uppercase;
+                    // border-left:1px solid #f8f8f8;
+                    // border-bottom: 1px solid #f8f8f8;
+                    // border-top:1px solid #f8f8f8;
+
+                }
+
+                .information {
+                    background-color: #2d506d;
+                    border-radius: 0px 5px 5px 0px;
+                    color: #fff;
+                    font-size: 12px;
+                    padding: 8px;
+                    width: 100%;
+
+                    span {
+                        font-size: 4px;
+                        text-align: center;
+
+                    }
+
+                }
+
+
+            }
+
+            @media #{$minLarge} {
+                width: 78.37%;
+                height: 820px;
+            }
+        }
+
+    }
+}
+
+i.active {
+    color: $active-color;
+    background-color: #f8f8f8;
+    padding: 4px;
+    text-align: center;
+    margin-left: -2px;
+    width: 50%;
+    border-radius: 5px;
+    margin-top: -3px;
+
+
+}

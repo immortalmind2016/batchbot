@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+  font-size: 12px;
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $devBodyBackground;
+    border-radius: 9999px;
+    margin: 10px 0;
+    width: 20px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: darken($mainColor-dark, 10%);
+    border-radius: 9999px;
+  }
+
+}
+
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lighten($mainColor-dark, 1%);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.custom-container {
+  margin: auto;
+
+  z-index: 1000;
+
+  .row {
+    margin: 0;
+  }
+}
+
+.ov {
+  overflow: auto;
+  height: 100%;
+}
+
+.custom-nav-toggler__side-nav {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  z-index: 1000000;
+  padding: 20px;
+  cursor: pointer;
+
+  i {
+    font-size: 40px;
+  }
+
+  &:hover {
+    transform: translate(10px, 0);
+
+  }
+}
+
+.toggle-icon--left {
+  transform: rotate(-180deg);
+  left: 20%;
+
+  &:hover {
+    transform: translate(0);
+    transform: rotate(-180deg);
+  }
+}

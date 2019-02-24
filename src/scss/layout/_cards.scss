@@ -1,0 +1,64 @@
+/* starting of develpers dashboard */
+.historyCard {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 2px;
+
+  .content {
+    padding: 3px 5px;
+    margin-bottom: -3px;
+
+    .float-left {
+      .fa-star {
+        color: gold;
+      }
+    }
+
+    .float-right {
+      text-align: center;
+
+      .icon-number {
+        font-size: 9px;
+      }
+    }
+
+    .card-text {
+      text-align: center;
+      border-bottom: 2px solid $devBodyBackground;
+      padding-bottom: 14px;
+      flex-grow: 1;
+    }
+  }
+
+  .logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+  }
+}
+
+.castingCard {}
+
+.schedule-card__dropdown__button {
+  color: inherit;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.schedule-card__dropdown {
+
+  .dropdown-item.active,
+  .dropdown-item:active {
+    background: transparent;
+    color: #000;
+  }
+}
+
+/* Ending of develpers dashboard */

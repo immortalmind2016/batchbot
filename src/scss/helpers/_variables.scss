@@ -1,0 +1,48 @@
+/*
+#############
+==> Colors
+#############
+*/
+
+/* Bootstrap Colors */
+$primary:#007bff;
+$danger: #dc3545;
+$success: #28a745;
+$info: #17a2b8;
+/* HOME */
+$mainColor:#004C8C;
+$mainColor-dark:darken($mainColor, 5%);
+$mainColor-light:lighten($mainColor, 20%);
+
+
+/* DEVELOPERS */
+$sideNavColor:#2e3944;
+$sideNavLink: #FFF;
+$devBodyBackground: #EEE;
+$devTextColor:#777;
+
+
+
+//sara
+$lightColor:#67cdfd;
+$darkColor:#394959;
+$mouse:pointer;
+$relPosition:relative;
+$absPosition:absolute;
+
+$page-color:#ececec;
+$element-background:#FFF;
+$blue-color:#2d506d;
+$active-color:#67cdfd;
+$margin-top:100px;
+$gray-color:rgb(190, 190, 190);
+$max-mobile:"(max-width:767px)";
+$minSmall:"(min-width:768px)";
+$minMedium:"(min-width:992px)";
+$minLarge:"(min-width:1200px)";
+/*
+#############
+==> dimentions 
+#############
+*/
+$modalTitleHeight:40px;

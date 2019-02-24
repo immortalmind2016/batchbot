@@ -1,0 +1,58 @@
+/* media query */
+@mixin mediaQuery($screen: "", $min: 0, $max: 0, $fixed: true) {
+  //required vars must be at first
+  @if $fixed {
+    @if $screen == "xs" {
+      @media (max-width: 575px) {
+        @content;
+      }
+    } @else if $screen == "sm" {
+      @media (min-width: 576px) {
+        @content;
+      }
+    } @else if $screen == "md" {
+      @media (min-width: 768px) {
+        @content;
+      }
+    } @else if $screen == "lg" {
+      @media (min-width: 992px) {
+        @content;
+      }
+    } @else if $screen == "xl" {
+      @media (min-width: 1200px) {
+        @content;
+      }
+    }
+  } @else {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  }
+}
+/* activation mixin
+
+  ==> this mixin is used to activate the links espicially the ones in nav or navbar structure
+*/
+@mixin activate($border-width, $border-style, $color) {
+  .nav-item {
+    transition: none;
+    &.active {
+      border-width: $border-width;
+      border-style: $border-style;
+      border-color: $color;
+      border-radius: 0.5em;
+      .nav-link {
+        color: $color;
+      }
+    }
+    .nav-link {
+      color: #333;
+    }
+
+    &:hover :not(.active) {
+      color: $color;
+    }
+  }
+}
+
+/* End of activation mixin */

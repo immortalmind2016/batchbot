@@ -1,0 +1,81 @@
+body {
+  background-color: #ececec;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  body ::-webkit-scrollbar {
+    width: 20px; }
+  body ::-webkit-scrollbar-track {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px; }
+  body ::-webkit-scrollbar-thumb {
+    background: #08528f;
+    border-radius: 10px; }
+  body ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; }
+  body .sub {
+    margin-top: 100px; }
+    body .sub .matarial {
+      background-color: #FFF;
+      margin-top: 50px; }
+      body .sub .matarial .options {
+        width: 100%;
+        height: 70px;
+        color: #838383;
+        padding: 10px;
+        box-shadow: 0px 5px 8px 0px #DDD; }
+        body .sub .matarial .options .terms {
+          color: #08528f; }
+        body .sub .matarial .options a {
+          padding-top: 10px;
+          border-right: 2px solid #000; }
+      body .sub .matarial .thin {
+        height: 1000px;
+        border-right: 1px solid #B7B5B5;
+        max-height: 500px; }
+      body .sub .matarial .fat {
+        height: 500px; }
+        body .sub .matarial .fat .lesson {
+          margin-top: 20px;
+          background-color: #f8f8f8;
+          border-radius: 5px; }
+          body .sub .matarial .fat .lesson .lec {
+            padding: 10px; }
+          body .sub .matarial .fat .lesson .information {
+            background-color: #2d506d;
+            height: 100%;
+            color: #fff;
+            font-size: 12.5px;
+            padding: 10px; }
+            body .sub .matarial .fat .lesson .information span {
+              font-size: 10px;
+              margin-top: 15px; }
+
+.upper-div {
+  background-color: #FFF;
+  padding: 10px;
+  border-radius: 5px;
+  color: #B7B5B5; }
+  .upper-div img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px; }
+  .upper-div h4 {
+    font-size: 18px;
+    font-weight: bold; }
+  .upper-div h6 {
+    font-size: 14px; }
+  .upper-div .massenger i {
+    color: #2196f3;
+    cursor: pointer; }
+  .upper-div .h5 {
+    padding-top: 17px;
+    margin-left: 20px; }
+    .upper-div .h5 h5 {
+      font-size: 16px;
+      line-height: .8; }
+
+/*# sourceMappingURL=sub.css.map */

@@ -1,0 +1,145 @@
+.navbar .nav-item.active {
+  border-color: transparent;
+}
+
+.navbar .nav-item.active .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-item:hover :not(.active) {
+  color: #fff;
+}
+
+.navbar .nav-item .nav-link {
+  color: rgba(#fff, 0.5);
+}
+
+.side-nav {
+  position: fixed;
+  height: 100%;
+  width: 210px;
+  padding: 0;
+  z-index: 100;
+  background: $sideNavColor;
+  box-shadow: 0 0 10px rgba(#333, 1);
+
+  .items-container {
+    padding: 10px;
+  }
+
+  .sidenav-link.active {
+    .nav-item {
+      background: rgba(darken($sideNavColor, $amount: 10%), 0.4);
+
+      div {
+        color: #fff;
+      }
+    }
+  }
+
+  li {
+    padding: 5px 20px;
+    margin-bottom: 15px;
+    border-radius: 0.5em;
+
+    .nav-link {
+      margin: auto;
+
+      .icon {
+        font-size: 16px;
+        margin-right: 40px;
+      }
+    }
+  }
+
+  .profile {
+    background: rgba(darken($sideNavColor, $amount: 10%), 0.4);
+    padding: 10px;
+
+    .profile-pic {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(darken($sideNavColor, $amount: 10%), 0.6);
+      box-shadow: 0 0 5px;
+    }
+  }
+}
+
+.side-nav-right {
+  @extend .side-nav;
+  right: 0;
+  box-shadow: none;
+  background-color: #fff;
+  width: 250px;
+  box-shadow: 0 0 5px;
+
+  .active {
+    background: transparent;
+  }
+
+  .nav {
+    .history-link {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background: rgba($devBodyBackground, 0.5);
+        left: -2px;
+      }
+    }
+
+    .nav-item {
+      padding: 0;
+      width: 50%;
+      text-align: center;
+
+      .nav-link {
+        padding: 15px;
+        color: $sideNavLink;
+        background: $sideNavColor;
+        border-radius: 0;
+
+        font: {
+          size: 15px;
+          weight: bold;
+        }
+
+        &.active {
+          background: $sideNavLink;
+          color: $sideNavColor;
+          box-shadow: 0 0 8px #333;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    .tab-pane {}
+  }
+}
+
+.leftSideNav__left {
+
+  left: -100%;
+
+
+  @include mediaQuery("xl") {
+    left: 0;
+  }
+
+  transition: 0.5s ease;
+}
+
+.leftSideNav__right {
+
+  left: 0%;
+
+
+  transition: 0.5s ease;
+}

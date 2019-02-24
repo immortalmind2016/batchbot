@@ -1,0 +1,261 @@
+/*
+#############
+==> Colors
+#############
+*/
+/* Bootstrap Colors */
+/* HOME */
+/* DEVELOPERS */
+/*
+#############
+==> dimentions 
+#############
+*/
+/* media query */
+/* activation mixin
+
+  ==> this mixin is used to activate the links espicially the ones in nav or navbar structure
+*/
+/* End of activation mixin */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: 12px;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+* ::-webkit-scrollbar {
+  width: 12px;
+}
+
+* ::-webkit-scrollbar-track {
+  background: #EEE;
+  border-radius: 9999px;
+  margin: 10px 0;
+  width: 20px;
+}
+
+* ::-webkit-scrollbar-thumb {
+  background: #002240;
+  border-radius: 9999px;
+}
+
+* ::-webkit-scrollbar-thumb:hover {
+  background: #004178;
+}
+
+.custom-container {
+  margin: auto;
+  overflow: auto;
+  z-index: 1000;
+}
+
+.custom-container .row {
+  margin: 0;
+}
+
+.ov {
+  overflow: auto;
+  height: 100%;
+}
+
+/*starting navbar*/
+.navbar .nav-item {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.navbar .nav-item.active {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #0083f2;
+  border-radius: 0.5em;
+}
+
+.navbar .nav-item.active .nav-link {
+  color: #0083f2;
+}
+
+.navbar .nav-item .nav-link {
+  color: #333;
+}
+
+.navbar .nav-item:hover :not(.active) {
+  color: #0083f2;
+}
+
+/*Ending navbar*/
+/*starting of section 2*/
+.sec-2 .nav-item {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.sec-2 .nav-item.active {
+  border-width: 0 0 0 4px;
+  border-style: solid;
+  border-color: #0083f2;
+  border-radius: 0.5em;
+}
+
+.sec-2 .nav-item.active .nav-link {
+  color: #0083f2;
+}
+
+.sec-2 .nav-item .nav-link {
+  color: #333;
+}
+
+.sec-2 .nav-item:hover :not(.active) {
+  color: #0083f2;
+}
+
+.sec-2 .nav-item.active {
+  border-radius: 0;
+}
+
+.sec-2 .nav-item {
+  margin-bottom: 25px;
+}
+
+/*ending of section 2*/
+/* starting of why batchbot */
+.sec-2 .why-batchbot {
+  border-bottom: 3px solid #004C8C;
+  padding-bottom: 5px;
+  color: #004C8C;
+  width: 207px;
+  margin: auto;
+}
+
+/* Ending of why batchbot */
+.homePage {
+  background: #FFF;
+
+  .navbar .nav-item {
+    .nav-link {
+      color: #000 !important;
+    }
+
+  }
+
+  .navbar .nav-item.active {
+    @include mediaQuery("lg") {
+      border: 1px solid $active-color;
+    }
+
+    .nav-link {
+      color: $active-color !important;
+    }
+  }
+
+  .why-section__nav {
+    li.active {
+      border-left: 3px solid #004C8C;
+    }
+
+    li {
+      cursor: pointer;
+
+    }
+
+  }
+
+
+  .navbar-brand {
+
+    background-image: url('/images/home/logo.png');
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+
+  }
+
+  .weavy-blue-img-container {
+    @include mediaQuery("md") {
+      margin-top: 200px;
+
+      height: 600px;
+      background-image: url('/images/home/wavy-blue.png');
+
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: -1% 0;
+      position: relative;
+    }
+
+    z-index: 1;
+  }
+
+  footer {
+
+    height: 500px;
+    background-image: url('/images/home/footer-blue-2x.png');
+    background-size: cover;
+    background-position: -1px -1px;
+    z-index: 0;
+    margin-bottom: 250px;
+    position: relative;
+
+
+    .container-inner {
+      margin: auto;
+      height: auto;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+      @include mediaQuery("md") {
+        position: absolute;
+        bottom: -35%;
+        height: 500px;
+
+        left: 0;
+        right: 0;
+      }
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .mop-img__container {
+        max-width: 400px;
+      }
+    }
+
+    .nav {
+      li {
+        margin-bottom: 30px;
+      }
+    }
+
+  }
+
+  .box {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .box--light {
+    background: #FFF;
+
+    color: $blue-color;
+  }
+
+  .box--blue {
+    color: #FFF;
+    background: $blue-color;
+  }
+}

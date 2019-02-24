@@ -1,0 +1,371 @@
+/* start settings*/
+.settings
+{
+    background-color:#f9fbfd;
+    padding-top: 50px;
+    padding-left: 25%;
+    padding-right: 20%;
+    
+}
+
+.settings .container > h6
+{
+    font-size: 14px;
+    color:#c4cfe1;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+}
+.settings h1:nth-child(2)
+{
+    margin-top: 0;
+    padding-top: 0;
+    
+    
+}
+/*start settings options*/
+
+.settings .setings-options ul li
+{
+    padding:20px 0 20px 0;
+    color: #a2b4cf;
+    border-bottom: 2px solid #f0f5fa;
+    cursor: pointer;
+      
+}
+
+@media(max-width:695px){
+.settings .setings-options ul li
+{
+    border: none;
+}}
+.settings .setings-options ul .active
+{
+    color: #000;
+    font-weight: bold;
+    border-color:#87b3ed;
+    font-size: 20px;
+      
+}
+.settings .setings-options .line
+{
+    margin-top:-3px;
+    width: 100%;
+    height: 4px;
+    background-color:#f0f5fa;
+  
+  
+
+}
+
+/*end settings options*/
+
+/*start settings form*/
+.settings .form
+{
+    padding-top: 80px;
+    padding-bottom:35px;
+    position: relative;
+}
+.settings .form h5
+{
+    position: absolute;
+    margin-top: -45px;
+    margin-left: -7px;
+     color: #000;
+    opacity: .6;
+   
+}
+.settings .form img
+{
+    width:150px;
+    height:150px;
+    margin-bottom:20px;
+    cursor: pointer;
+    border:2px solid #000;
+}
+.settings .form .change-photo
+{
+    
+    position: absolute;
+    height: 50px;
+    background-color:#000;
+    width: 150px;
+    margin-top:100px;
+    margin-left:0px;
+    opacity: .6;
+    
+    font-size: 12px;
+    cursor: pointer;
+    
+  -webkit-transition:all .3s ease-in-out; 
+    -moz-transition:all .3s ease-in-out; 
+      -o-all : .3s ease-in-out; 
+      -ms-:all .3s ease-in-out;      
+  transition:all .3s ease-in-out;  
+    
+}
+.settings .form .change-photo .ch-cam
+{
+    margin-top: 8px;
+    margin-left:-5px;
+    position: relative;
+    color:gray;
+     
+         -webkit-transition:all .3s ease-in-out; 
+    -moz-transition:all .3s ease-in-out; 
+      -o-all : .3s ease-in-out; 
+      -ms-:all .3s ease-in-out;      
+  transition:all .3s ease-in-out;  
+
+}
+.settings .form .change-photo .ch-upload
+{
+margin-top:3px;
+margin-left:-7px;
+z-index:99;
+font-weight: bold;
+ color:#fff;
+ position: relative;
+
+ -webkit-transition:all .3s ease-in-out; 
+    -moz-transition:all .3s ease-in-out; 
+      -o-all : .3s ease-in-out; 
+      -ms-:all .3s ease-in-out;      
+  transition:all .3s ease-in-out;  
+}
+
+.settings .form .frow
+{
+    margin-bottom:20px;
+}
+.settings .form input
+{
+    padding: 7px;
+    border: .75px solid #CFD2D6;    
+}
+
+.settings .form .frow h6
+{
+    color: #a2b4cf;
+    font-size:13px;
+    
+    opacity: .7;
+    margin-top: 2px;
+    
+}
+.settings .form button
+{
+    background-color:#2c7be5;
+    padding: 7px;
+     border-radius:6%;
+     border-color:#2c7be5;
+     color:#fff;
+     cursor: pointer;
+     margin-top:20px;
+}
+
+/*end settings  form*/
+/*start profile  option*/
+.settings .profile-options
+{ margin-bottom: 30px;
+    padding-top:50px;
+    border-top:solid 2px #f0f5fa; 
+}
+.settings .profile-options h6
+{
+    color: #070707;
+    opacity: .7;
+}
+.settings .profile-options p
+{
+    color: #b7c5da;
+}
+.settings .profile-options .choose
+{
+    margin-bottom:20px;
+}
+.rad
+{
+    width:60px;
+    
+     -webkit-border-radius:25px;
+   -o-border-radius:25px;
+   -ms-border-radius:25px;   
+    border-radius:25px;
+    background-color:#eef1f7;
+    border: solid 2px #eef1f7;
+    transition:all .3s ease-in-out;
+    
+    
+}
+
+.settings .profile-options .choose .rad .circl
+{
+    width: 25px;
+    height: 25px;
+    background-color:#fff;
+    animation: moving 5s 5 linear;
+   
+ 
+}
+.color-{
+    background-color:#2c7be5;
+    border-color: #2c7be5;
+}
+.move-
+{
+    margin-left: 30px;
+}
+
+.settings .profile-options .choose h6
+{
+    padding-left:5px;
+    margin-top:7px;
+    color: #b7c5da;
+}
+/*end profile option*/
+
+/*start change Password form*/
+.settings .password-form{
+    padding-top: 70px;
+    padding-bottom:50px;
+     border-top:solid 2px #f0f5fa; 
+}
+.settings .password-form h5
+{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -7px;
+     color: #000;
+    opacity: .7;
+   
+}
+.settings .password-form .prow
+{
+    margin-bottom:15px;
+}
+.settings .password-form input
+{
+       padding: 7px;
+    border: .75px solid #CFD2D6;    
+    
+   
+    
+}
+.settings .password-form .Password-requirements
+{
+    background-color:#EAF3FF;
+    -webkit-border-radius:5%;
+   -o-border-radius:5%;
+   -ms-border-radius:5%;   
+     border-radius:5%;
+    padding: 20px;
+    color: #AAC2E0;
+    margin-bottom:10px;
+    
+    
+}
+.settings .password-form .Password-requirements h6
+{
+    color: #000;
+    opacity: .7;
+}
+.settings .password-form .Password-requirements ul
+{
+    margin-top:-10px;
+}
+.settings .password-form button
+{
+    background-color:#2c7be5;
+    padding: 7px;
+  -webkit-border-radius:6%;
+   -o-border-radius:6%;
+   -ms-border-radius:6%;   
+     border-radius:6%;
+     border-color:#2c7be5;
+     color:#fff;
+     cursor: pointer;
+}
+/*end Password form */
+
+
+/*start delete acount*/
+.settings .deleteAcount {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-top:solid 2px #f0f5fa;
+    
+}
+.settings .deleteAcount h5
+{
+    
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -7px;
+     color: #000;
+    opacity: .6;
+}
+.settings .deleteAcount .dpassword
+{
+    margin-top:50px;
+}
+.settings .deleteAcount input
+{
+       padding: 7px;
+    border: .75px solid #CFD2D6;
+    margin-bottom: 15px;
+}
+.settings .deleteAcount .DeleteAccountWarning
+{
+    background-color:#EAF3FF;
+    -webkit-border-radius:5%;
+   -o-border-radius:5%;
+   -ms-border-radius:5%;   
+     border-radius:5%;
+    padding: 20px;
+    color: #A5B8D1;
+    margin-bottom:10px;
+    
+    
+}
+.settings .deleteAcount .DeleteAccountWarning h6
+{
+    color: #000;
+    opacity: .7;
+    font-size: 16px;
+    font-weight: blod;
+}
+
+
+.settings .deleteAcount button
+{
+    background-color:#2c7be5;
+    padding: 7px;
+     border-radius:6%;
+     border-color:#2c7be5;
+     color:#fff;
+     cursor: pointer;
+}
+/*end delete acount*/
+/*start choose theme*/
+.settings .choose-theme
+{
+     padding-top: 50px;
+    padding-bottom: 50px;
+    border-top:solid 2px #f0f5fa;
+}
+.settings .choose-theme button
+{
+ background-color:#394959;
+ padding: 7px;
+     
+     border :solid 2px #394959;
+     color:#fff;
+     cursor: pointer;
+       -webkit-border-radius:6%;
+   -o-border-radius:6%;
+   -ms-border-radius:6%;   
+     border-radius:6%;
+}
+/*end choose theme*/

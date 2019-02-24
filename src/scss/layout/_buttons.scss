@@ -1,0 +1,51 @@
+/* starting of dashboard/bordcasting buttons */
+.addButton {
+  color: #fff;
+  background: $sideNavColor;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.7em;
+  cursor: pointer;
+
+  &:hover {
+    background: lighten($sideNavColor, 5%);
+    color: #fff;
+  }
+
+  &:active,
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px lighten($sideNavColor, 5%);
+  }
+}
+
+.send-button {
+  width: 110px;
+  height: 35px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: $lightColor;
+  padding: 2px 5px 0 0px;
+
+  &:hover {
+    background-color: $darkColor;
+    color: #fff;
+  }
+}
+
+.save-button {
+  width: 110px;
+  height: 35px;
+  font-size: 18px;
+  color: #fff;
+  background-color: $lightColor;
+  padding: 2px 5px 0 0px;
+
+  &:hover {
+    background-color: $darkColor;
+    color: #fff;
+  }
+}
+
+/* ending of dashboard/bordcasting buttons */

@@ -1,0 +1,694 @@
+body {
+  background: $devBodyBackground;
+  color: $devTextColor;
+  overflow: auto;
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
+}
+
+.custom-container {
+  padding: 60px;
+
+  @include mediaQuery("xs") {
+    padding: 20px;
+  }
+
+  .tab-pane {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+/* putting a pointer to all pointable icons */
+.fa-trash,
+.fa-edit {
+  cursor: pointer;
+}
+
+.history-card-cont,
+.top-card-container {
+  padding: 10px;
+}
+
+.historyCard {
+  margin-bottom: 20px;
+}
+
+.top-card-container {
+  padding: 10px;
+
+  .historyCard {
+    .content {
+      padding: 0 10px;
+    }
+
+    .fa-paper-plane {}
+
+    .fa-trash {}
+  }
+}
+
+.addButton {
+  width: 140px;
+
+}
+
+.casting-cards-container {
+  margin: 20px 0 0 0;
+
+  .historyCard {
+    @include mediaQuery("xs") {
+      width: (85% / 2);
+
+      &:not(:last-of-type) {
+        margin-right: (15% /2);
+      }
+    }
+
+    @include mediaQuery("sm") {
+      width: (70% / 2);
+
+      &:not(:last-of-type) {
+        margin-right: 15%;
+      }
+    }
+
+    @include mediaQuery("lg") {
+      width: (90% / 3);
+
+      &:not(:last-of-type) {
+        margin-right: (10% / 2);
+      }
+    }
+
+    @include mediaQuery("xl") {
+      width: (80% / 3);
+
+      &:not(:last-of-type) {
+        margin-right: 3%;
+      }
+    }
+
+    @include mediaQuery("", "0", "575px", false) {
+      width: (95%/2);
+
+      &:not(:last-of-type) {
+        margin-right: 1%;
+      }
+    }
+
+    @include mediaQuery("", "0", "400px", false) {
+      width: 80%;
+      margin: 20px 0 0 0;
+    }
+
+    .fa-calendar-plus {
+      color: $primary;
+
+      .fa-trash {}
+
+      .fa-edit {}
+    }
+  }
+}
+
+/*BrodCast a message*/
+.schedule-click {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+
+  .message-part {
+    width: 307px;
+    margin-left: 10%;
+
+    textarea {
+      width: 100%;
+      height: 200px;
+      padding: 15px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      outline: 0;
+    }
+
+    .learn-more {
+      @extend %ext1;
+      border-top: .5px solid #d1cfcf;
+      border-right: .5px solid #d1cfcf;
+      border-left: .5px solid #d1cfcf;
+      padding: 10px 0 0 95px;
+      margin-top: -5px;
+
+      a {
+        font-size: 20px;
+        color: grey;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: #394959;
+      }
+    }
+
+    .add-button {
+      @extend %ext1;
+      border: .5px solid #d1cfcf;
+      padding: 8px 0 0 75px;
+      position: relative;
+
+      a {
+        font-size: 25px;
+        font-weight: 500;
+        color: grey;
+        text-decoration: none;
+
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: $darkColor;
+      }
+
+    }
+  }
+
+  .schedule-sendTo-part {
+    margin-left: 50px;
+    display: inline-flex;
+    flex-direction: column;
+    width: 170px;
+
+    .sendTo {
+      margin-bottom: 20px;
+      margin-left: 10px;
+      font-size: 18px;
+      font-weight: 600;
+      color: grey;
+
+      i {
+        font-size: 18px;
+        margin-right: 5px;
+      }
+    }
+
+    .schedule-sendTo-all {
+
+      margin-bottom: 5px;
+
+
+      .schedule-all {
+        @extend %ext2;
+        margin-right: 10px;
+
+        background-color: $darkColor;
+      }
+
+      .schedule-all-active {
+        @extend %ext2;
+        margin-right: 10px;
+        background-color: $lightColor;
+      }
+
+      .to-all {
+        @extend %ext3;
+
+      }
+
+      .to-all-active {
+        @extend %ext4;
+
+      }
+    }
+
+    .schedule-sendTo-admins {
+      margin-bottom: 5px;
+
+      .schedule-admins {
+        @extend %ext2;
+        margin-right: 10px;
+
+        background-color: $darkColor;
+      }
+
+      .schedule-admins-active {
+        @extend %ext2;
+        margin-right: 10px;
+
+        background-color: $lightColor;
+      }
+
+      .to-admins {
+        @extend %ext3;
+
+      }
+
+      .to-admins-active {
+        @extend %ext4;
+
+      }
+
+    }
+
+    .schedule-sendTo-students {
+      margin-bottom: 25px;
+
+      .schedule-students {
+        @extend %ext2;
+        margin-right: 10px;
+
+        background-color: $darkColor;
+      }
+
+      .schedule-students-active {
+        @extend %ext2;
+        margin-right: 10px;
+
+        background-color: $lightColor;
+      }
+
+      .to-students {
+        @extend %ext3;
+
+      }
+
+      .to-students-active {
+        @extend %ext4;
+
+      }
+    }
+
+    .schedule-time {
+      width: 150px;
+      height: 80px;
+
+      .specific-time {
+        height: 30px;
+        width: 100%;
+        background-color: $darkColor;
+        color: #fff;
+        font-size: 15px;
+        padding: 4px 0 0 25px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .time {
+        input {
+          width: 100%;
+          height: 50px;
+          color: #fff;
+          background-color: $lightColor;
+          font-size: 18px;
+          padding: 4px 0 0 30px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          outline: 0;
+          border-width: 0;
+        }
+      }
+    }
+
+    .schedule-save {
+      width: 110px;
+      margin-left: 130px;
+      margin-top: 25px;
+
+      i {
+        font-size: 15px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .schedule-at-part {
+    margin-left: 50px;
+    width: 110px;
+    display: inline-flex;
+    flex-direction: column;
+
+    .at {
+      font-size: 20px;
+      font-weight: 600;
+      color: grey;
+      margin-left: 5px;
+      margin-bottom: 15px;
+
+      i {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+    }
+
+    .at-sunday {
+      .sunday {
+        @extend %ext5;
+        background-color: $darkColor;
+      }
+
+      .sun {
+        @extend %ext6;
+      }
+
+      .day-active {
+        @extend %ext5;
+        background-color: $lightColor;
+      }
+
+      .dayName-active {
+        @extend %ext7;
+      }
+    }
+
+    .at-monday {
+
+      .monday {
+        @extend %ext5;
+        background-color: $darkColor;
+      }
+
+      .mon {
+        @extend %ext6;
+      }
+
+      .day-active {
+        @extend %ext5;
+        background-color: $lightColor;
+      }
+
+      .dayName-active {
+        @extend %ext7;
+      }
+    }
+
+    .at-tuesday {
+
+      .tuesday {
+        @extend %ext5;
+        background-color: $darkColor;
+      }
+
+      .tue {
+        @extend %ext6;
+      }
+
+      .day-active {
+        @extend %ext5;
+        background-color: $lightColor;
+      }
+
+      .dayName-active {
+        @extend %ext7;
+      }
+    }
+
+    .at-wednesday {
+      .wednesday {
+        @extend %ext5;
+        background-color: $darkColor;
+      }
+
+      .wed {
+        @extend %ext6;
+      }
+
+      .day-active {
+        @extend %ext5;
+        background-color: $lightColor;
+      }
+
+      .dayName-active {
+        @extend %ext7;
+      }
+
+    }
+
+    .at-thursday {
+      .thursday {
+        @extend %ext5;
+        background-color: $darkColor;
+      }
+
+      .thu {
+        @extend %ext6;
+      }
+
+      .day-active {
+        @extend %ext5;
+        background-color: $lightColor;
+      }
+
+      .dayName-active {
+        @extend %ext7;
+      }
+
+    }
+
+    .at-friday {
+      .friday {
+        @extend %ext5;
+        background-color: $darkColor;
+      }
+
+      .fri {
+        @extend %ext6;
+      }
+
+      .day-active {
+        @extend %ext5;
+        background-color: $lightColor;
+      }
+
+      .dayName-active {
+        @extend %ext7;
+      }
+    }
+
+    .at-saturday {
+      .saturday {
+        @extend %ext5;
+        background-color: $darkColor;
+      }
+
+      .sat {
+        @extend %ext6;
+      }
+
+      .day-active {
+        @extend %ext5;
+        background-color: $lightColor;
+      }
+
+      .dayName-active {
+        @extend %ext7;
+      }
+    }
+
+  }
+
+
+}
+
+.sendNow-click {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+
+  /* left part */
+  .message-part {
+    width: 307px;
+    margin-left: 10%;
+
+    textarea {
+      width: 100%;
+      height: 200px;
+      padding: 15px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      outline: 0;
+    }
+
+    .learn-more {
+      @extend %ext1;
+      border-top: .5px solid #d1cfcf;
+      border-right: .5px solid #d1cfcf;
+      border-left: .5px solid #d1cfcf;
+      padding: 10px 0 0 95px;
+      margin-top: -5px;
+
+      a {
+        font-size: 20px;
+        color: grey;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: #394959;
+      }
+    }
+
+    .add-button {
+      @extend %ext1;
+      border: .5px solid #d1cfcf;
+      padding: 8px 0 0 75px;
+      position: relative;
+
+      a {
+        font-size: 25px;
+        font-weight: 500;
+        color: grey;
+        text-decoration: none;
+
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: $darkColor;
+      }
+
+    }
+  }
+
+  /* right part */
+  .sendNow-sendTo-part {
+    width: 202px;
+    display: inline-flex;
+    margin-left: 15%;
+    flex-direction: column;
+
+    .sendTo {
+      font-size: 20px;
+      font-weight: 700;
+      color: grey;
+      margin-left: 20px;
+
+      i {
+        font-size: 18px;
+        margin-right: 5px;
+      }
+    }
+
+    .sendNow-sendTo-all {
+      margin-top: 30px;
+      margin-bottom: 20px;
+
+      .sendNow-all {
+        @extend %ext2;
+        margin-right: 20px;
+
+        background-color: $darkColor;
+      }
+
+      .sendNow-all-active {
+        @extend %ext2;
+        margin-right: 20px;
+
+        background-color: $lightColor;
+      }
+
+      .all {
+        @extend %ext3;
+      }
+
+      .all-active {
+        @extend %ext4;
+      }
+    }
+
+    .sendNow-sendTo-admins {
+
+      margin-bottom: 20px;
+
+      .sendNow-admins {
+        @extend %ext2;
+        margin-right: 20px;
+
+        background-color: $darkColor;
+      }
+
+      .sendNow-admins-active {
+        @extend %ext2;
+        margin-right: 20px;
+
+        background-color: $lightColor;
+      }
+
+      .admins {
+        @extend %ext3;
+      }
+
+      .admins-active {
+        @extend %ext4;
+      }
+    }
+
+    .sendNow-sendTo-students {
+
+      margin-bottom: 75px;
+
+      .sendNow-students {
+        @extend %ext2;
+        margin-right: 20px;
+
+        background-color: $darkColor;
+      }
+
+      .sendNow-students-active {
+        @extend %ext2;
+        margin-right: 20px;
+
+        background-color: $lightColor;
+      }
+
+      .students {
+        @extend %ext3;
+      }
+
+      .students-active {
+        @extend %ext4;
+      }
+    }
+
+    .sendNow-send {
+
+      margin-left: 30px;
+
+      .send-button i {
+        margin-right: 5px;
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.braodcast-page {
+  width: 809px;
+  margin: 0 auto;
+
+  * {
+    transition: none;
+  }
+}

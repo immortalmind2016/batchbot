@@ -1,0 +1,118 @@
+.modal {
+
+
+    .modal-dialog {
+        width: 768px;
+
+        .modal-content {
+            border: none;
+            width: 768px;
+            padding-bottom: 35px;
+        }
+    }
+}
+
+
+
+.add-button__popup {
+    height: 200px;
+    width: 400px;
+    background: #FFF;
+    position: absolute;
+    padding: 20px;
+    top: 48px;
+    left: -45px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px 1px #AAA;
+    transform: scale(0);
+    transition: transform 0.4s ease;
+
+    .input-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #efefef;
+
+        padding-bottom: 20px;
+
+        input.form-control {
+            color: $info;
+            font-weight: 600;
+            width: 50%;
+        }
+
+        input.invalid {
+            color: $danger;
+            border: 1px solid $danger;
+            box-shadow: none;
+
+
+            &:focus,
+            &:active {
+                border: 1px solid $danger;
+
+            }
+        }
+
+        .badge {
+            position: absolute;
+            bottom: 22px;
+            right: 93px;
+        }
+    }
+
+    .nav {
+        display: block;
+
+        .nav-links-container {
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tabs__container {
+            display: flex;
+            justify-content: center;
+
+
+            div:not(.active) {
+                display: none
+            }
+
+            div {
+                width: 100%;
+                height: 100%;
+
+                padding-top: 40px;
+            }
+        }
+
+
+        a {
+            font-size: 12px !important;
+
+
+        }
+
+        a.active {
+
+            border-bottom: 2px solid #AAA;
+
+        }
+    }
+}
+
+.add-button__popup--show {
+    animation: pop 0.5s ease 0s 1 normal forwards;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
